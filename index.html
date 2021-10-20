@@ -172,77 +172,43 @@
                 </div>
             </div>
         </section>
-        <!-- Contact Section-->
-        <section class="page-section">
+        <!-- Projects Section-->
+        <section class="page-section portfolio" id="research">
             <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Research</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Contact Section Form-->
+                <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    <!-- Research Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#researchModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            <img class="img-fluid" src="assets/research/evo-nano/thumbnail.png" alt="..." />
+							<h4 class="text-uppercase mb-4 text-center"> Large-scale tumor growth simulator </h2>
+                        </div>
+                    </div>
+					<!-- Research Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#researchModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
+                            <img class="img-fluid" src="assets/research/team_fight_prediction/thumbnail.png" alt="..." />
+							<h4 class="text-uppercase mb-4 text-center"> Team fight prediction through player camera</h2>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+		
         <!-- Footer-->
         <footer class="footer text-center" id="footer">
             <div class="container">
@@ -371,6 +337,7 @@
                 </div>
             </div>
         </div>
+		
         <!-- Portfolio Modal 3-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -549,6 +516,102 @@
                 </div>
             </div>
         </div>
+		
+		<!-- Research Modal 1 -->
+        <div class="portfolio-modal modal fade" id="researchModal1" tabindex="-1" aria-labelledby="researchModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Evo Nano</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+									<h4 class="text-uppercase mb-4">Horizon 2020 - Bio-Medical Research - Evolutionary Simulation - C++</h4>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/research/evo-nano/logo.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">
+									Esport is a large and still growing industry with vast audiences. 
+									Multiplayer Online Battle Arenas (MOBAs), a sub-genre of esports, possess a very complex environment, which often leads to experts missing important coverage while broadcasting live competitions.
+									One common game event that holds significant importance for broadcasting is referred to as a team fight engagement.
+									</p>
+									<p class="mb-4">
+									My role in this project consisted of creating a fully functional framework for large scale tumor growth simulation. I used <a href"http://physicell.org/"> PhysiCell </a>, an agent based simulator, as the basis of the framework, and updated it to allow for easy addition of multiple cell variations.
+									The procedurally generated vascular system was also implemented in order to replicate the conditions of the cell cycle and the effects proximity of the cells to the oxygen supply.
+									</p>
+									<p class="mb-4">
+									As the result my work on the project, I published a paper on the effects of evolutionary properties of autonomous agents in competitive environments.
+									<br/><a href="http://sed.vpts.edu.rs/CD%20Proceedings%202019/proceedings/2-22.pdf"> Tot M, Kupusinac A, Balaz, I (2019) Influence of Embodiment on Emergence of Subjective Data Models in Evolutionary Agents. Proceedings of the SED 2019, May 24-25. </a>
+									</p>
+									<img class="img-fluid rounded mb-5" src="assets/research/evo-nano/agent.png" alt="..." />
+                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<!-- Research Modal 2 -->
+        <div class="portfolio-modal modal fade" id="researchModal2" tabindex="-1" aria-labelledby="researchModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Predicting teamfights through player camera</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+									<h4 class="text-uppercase mb-4">Player Analytics - Dota 2 - Team Fight - Neural Networks - Python </h4>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/research/team_fight_prediction/camera.gif" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">
+									Evo-Nano is a Horizon 2020 project focused on creating an integrated platform for the 
+									artificial evolution and validation of novel strategies for treatment of cancer using nanoparticles.
+									The goal of the research is to build a framework that will provide a a full pipeline for the development of effective NP-based therapies
+									that are safe, have optimal bio-distribution and delivery characteristics and can be personalised to specific patients and health risks.
+									</p>
+									<p class="mb-4">
+									My role in this project consisted of creating a fully functional framework for large scale tumor growth simulation. I used <a href"http://physicell.org/"> PhysiCell </a>, an agent based simulator, as the basis of the framework, and updated it to allow for easy addition of multiple cell variations.
+									The procedurally generated vascular system was also implemented in order to replicate the conditions of the cell cycle and the effects proximity of the cells to the oxygen supply.
+									</p>
+									<p class="mb-4">
+									As the result my work on the project, I published a paper on the effects of evolutionary properties of autonomous agents in competitive environments.
+									<br/><a href="http://sed.vpts.edu.rs/CD%20Proceedings%202019/proceedings/2-22.pdf"> Tot M, Kupusinac A, Balaz, I (2019) Influence of Embodiment on Emergence of Subjective Data Models in Evolutionary Agents. Proceedings of the SED 2019, May 24-25. </a>
+									</p>
+									<img class="img-fluid rounded mb-5" src="assets/research/team_fight_prediction/camera.gif" alt="..." />
+                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
