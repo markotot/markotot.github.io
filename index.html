@@ -151,8 +151,8 @@
 								and a part of Game AI research group at Queen Mary University of London.
 							</p>
 							<p class="lead">
-								My research is based on enabling the use of <span class="double_lead">statistical forward planning</span> methods in complex environments.
-								These methods struggle in sparse reward problems, as they don't know how good they are doing. So let's help them with some automatically generated <span class=double_lead>subgoals</span> through
+								My research is based on enabling the use of <span class="double_lead">statistical forward planning</span> methods in combination with <span class="double_lead">locally learned state representations</span> in complex environments.
+								SFP methods struggle in sparse reward problems, as they don't know how good they are doing. So let's help them with some automatically generated <span class=double_lead>subgoals</span> through
 								<span class="double_lead">novelty exploration</span> and <span class="double_lead">locally learned state representations</span>. 
 							</p>
 						</div>
@@ -213,6 +213,16 @@
                             </div>
                             <img class="img-fluid" src="assets/research/ai_cheating/thumbnail.png" alt="..." />
 							<h4 class="text-uppercase mb-4 text-center"> AI Agents vs professional players</h2>
+                        </div>
+                    </div>
+					<!-- Research Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#researchModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/research/mcgs/thumbnail.png" alt="..." />
+							<h4 class="text-uppercase mb-4 text-center"> Monte Carlo Graph Search</h2>
                         </div>
                     </div>
                 </div>
@@ -607,7 +617,7 @@
 									</p>
 									<p class="mb-4">
 									As the result my work on the project, I published a paper on the effects of evolutionary properties of autonomous agents in competitive environments.
-									<br/><a href="http://sed.vpts.edu.rs/CD%20Proceedings%202019/proceedings/2-22.pdf"> Tot M, Kupusinac A, Balaz, I (2019) Influence of Embodiment on Emergence of Subjective Data Models in Evolutionary Agents. Proceedings of the SED 2019, May 24-25. </a>
+									<br/><a href="http://www.diego-perez.net/papers/TeamFightPredictionCoG2021.pdf"> Marko Tot, Michelangelo Conserva, Alan Pedrassoli Chitayat, et al. What Are You Looking At? Team Fight Prediction Through Player Camera, in Proceedings of the IEEE Conference on Games (CoG) (2021) </a>
 									</p>
 									<img class="img-fluid rounded mb-5" src="assets/research/team_fight_prediction/camera.gif" alt="..." />
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
@@ -622,7 +632,7 @@
             </div>
         </div>
 		
-		<div class="portfolio-modal modal fade" id="researchModal3" tabindex="-1" aria-labelledby="researchModal2" aria-hidden="true">
+		<div class="portfolio-modal modal fade" id="researchModal3" tabindex="-1" aria-labelledby="researchModal3" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -648,6 +658,58 @@
 									focusing on the AlphaStar and OpenAI Five. These two agents have been showcased during major gaming events and have beaten many professional players. 
 									Following the competition, many concerns have been raised throughout the gaming community about the validity of the AI agents. 
 									During the talk multiple concerns about the AI are presented and discussed, as well as the restrictions imposed on the game in order to make the playing field as fair as possible.
+									</p>
+									<div class="embed-responsive">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/cuwzccguAWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<div class="portfolio-modal modal fade" id="researchModal4" tabindex="-1" aria-labelledby="researchModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Monte Carlo Graph Search</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+									<h4 class="text-uppercase mb-4"> Game AI - GridWorld - Planning - Novelty </h4>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/research/ai_cheating/logo.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">
+									
+									Monte Carlo Tree Search (MCTS) has proven to be a staple method in Game Artificial Intelligence for creating agents that can perform well in complex environments without requiring domain-specific knowledge.
+									The main downside of this planning based algorithm is the high computational budget needed to recommend an action. 
+									The fundamental cause of this is a vast search space caused by a high branching factor, and the difficulty to create a good heuristic function to guide the search without leveraging domain-specific knowledge.
+									Recent advances in the field proposed a new planning based method called Monte Carlo Graph Search (MCGS),
+									which uses a graph instead of a tree to plan its next action, reducing the branching factor and consequently increasing	the performance of the search.
+									
+									In this research we proposed several modifications that optimize the performance by increasing the sample efficiency of MCGS. 
+									The use of frontier for	node selection, improving the rollout phase by doing stored	rollouts, and a generalized approach to guide the search by incorporating a domain-independent online novelty detection	method.
+									Together these enhancements enable MCGS to solve sparse reward environments while using a significantly lower computational budget than MCTS.
+									
+									This is a continuous research that resulted in following publications: 
+									<br/><a href="http://www.diego-perez.net/papers/MCGS-AAAIWorkshop22.pdf"> Marko Tot, Michelangelo Conserva, Sam Devlin and Diego Perez-Liebana, Making Something Out of Nothing: Monte Carlo Graph Search in Sparse Reward Environments, in AAAI-22 Workshop on Reinforcement Learning in Games (2022). </a>
+									<br/><a href="http://www.diego-perez.net/papers/TurningZeroesMCGS-CoG22.pdf"> Marko Tot, Michelangelo Conserva, Sam Devlin and Diego Perez-Liebana, Turning Zeroes into Non-Zeroes: Sample Efficient Exploration with Monte Carlo Graph Search, in Proceedings of the IEEE Conference on Games (CoG) (2022). </a>
+									
+									
 									</p>
 									<div class="embed-responsive">
 										<iframe width="560" height="315" src="https://www.youtube.com/embed/cuwzccguAWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
