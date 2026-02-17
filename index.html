@@ -124,6 +124,16 @@
 							<h4 class="text-uppercase mb-4 text-center"> Trajectory Following in a 3D Game</h4>
                         </div>
                     </div>
+					<!-- Research Item 7-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#researchModal7">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/research/byot/thumbnail.png" alt="..." />
+							<h4 class="text-uppercase mb-4 text-center"> Bootstrap Your Own Teacher</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -871,7 +881,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-									<h4 class="text-uppercase mb-4">World Models - Imitation Learning - Inverse Dynamics - Transformers</h4>
+									<h4 class="text-uppercase mb-4">World Models - Imitation Learning - Inverse Dynamics</h4>
                                     <!-- Portfolio Modal - Video-->
 									<div class="embed-responsive mb-5">
 										<iframe width="560" height="315" src="https://www.youtube.com/embed/s058ovnk7Bg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -888,6 +898,51 @@
 									</p>
 									<p class="mb-4">
 									<a href="https://openreview.net/forum?id=KhWDZQenjd" target="_blank" rel="noopener noreferrer">Marko Tot, Shu Ishida, Abdelhak Lemkhenter, et al. Adapting a World Model for Trajectory Following in a 3D Game, ICLR 2025 Workshop on World Models (2025).</a>
+									</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- Research Modal 7 -->
+		<div class="portfolio-modal modal fade" id="researchModal7" tabindex="-1" aria-labelledby="researchModal7" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Bootstrap Your Own Teacher</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+									<h4 class="text-uppercase mb-4">Multi-Game RL - Policy Distillation - Atari - Generalist Agents</h4>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/research/byot/thumbnail.png" alt="BYOT" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">
+									Training generalist agents capable of performing well across diverse environments is a significant goal of reinforcement learning.
+									Current state-of-the-art methods for multi-game RL rely on offline datasets, and often discard the policy used to gather trajectories despite its potential to provide a rich learning signal.
+									In this paper, we revisit policy distillation for multi-game RL and introduce a new framework called Bootstrap Your Own Teacher (BYOT) that extends policy distillation to the online-RL setting.
+									</p>
+									<p class="mb-4">
+									BYOT alternates between two phases: (i) game-specific finetuning and (ii) distilling bootstrapped teachers back into a shared multi-game policy.
+									By directly regulating the multi-game learning dynamics in policy space, BYOT balances training without explicit gradient adjustments or reward normalization, whilst being highly parameter efficient.
+									</p>
+									<p class="mb-4">
+									Our framework is empirically validated for both online and offline multi-game learning on the Atari-40 benchmark.
+									BYOT outperforms all prior online Atari-40 multi-game agents, achieving an IQM human-normalized-score (HNS) of 152.7%.
+									Moreover, by adopting state-of-the-art PPO teacher agents and policy distillation, we more than triple the leading IQM-HNS in offline settings to 369.5%, whilst using significantly fewer parameters.
+									</p>
+									<p class="mb-4">
+									<a href="https://doi.org/10.1109/CoG64752.2025.11114408" target="_blank" rel="noopener noreferrer">Donal John Byrne, Marko Tot, Paul Duckworth, Clément Bonnet, Alexandre Laterre, Thomas D. Barrett. Bootstrap Your Own Teacher: Online Policy Distillation for Multi-Game Reinforcement Learning, in Proceedings of the IEEE Conference on Games (CoG) (2025).</a>
 									</p>
                                 </div>
                             </div>
