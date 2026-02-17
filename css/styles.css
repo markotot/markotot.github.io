@@ -11362,6 +11362,8 @@ html {
 }
 #mainNav .navbar-nav li.nav-item a.nav-link {
   color: #fff;
+  min-width: 8rem;
+  text-align: center;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   color: #1abc9c;
@@ -11458,7 +11460,6 @@ html {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
   height: 100%;
