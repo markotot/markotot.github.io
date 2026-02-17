@@ -11477,9 +11477,13 @@ html {
 }
 .portfolio .portfolio-item h4 {
   margin-top: auto;
+  margin-bottom: auto !important;
   padding-top: 0.5rem;
-  margin-bottom: 0.5rem !important;
+  padding-bottom: 0.5rem;
   font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
