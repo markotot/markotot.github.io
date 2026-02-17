@@ -257,6 +257,16 @@
 							<h4 class="text-uppercase mb-4 text-center"> World and Human Action Model</h4>
                         </div>
                     </div>
+					<!-- Research Item 6-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#researchModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/research/trajectory_following/thumbnail.png" alt="..." />
+							<h4 class="text-uppercase mb-4 text-center"> Trajectory Following in a 3D Game</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -596,7 +606,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-									<h4 class="text-uppercase mb-4">Racing - Eye Tracking - Computer Vision - Python</h4>
+									<h4 class="text-uppercase mb-4">Racing - Eye Tracking - Computer Vision - Audio - Python</h4>
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/games/retina_racer/thumbnail.png" alt="Retina Racer" />
                                     <!-- Portfolio Modal - Text-->
@@ -836,6 +846,48 @@
 									<br/><a href="https://www.nature.com/articles/s41586-025-08600-3" target="_blank" rel="noopener noreferrer">Anssi Kanervisto, ..., Marko Tot, ..., Katja Hofmann. World and Human Action Model (WHAM), Nature (2025).</a>
 									<br/>
 									<br/><a href="https://huggingface.co/microsoft/wham" target="_blank" rel="noopener noreferrer">Model and code on HuggingFace</a>
+									</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- Research Modal 6 -->
+		<div class="portfolio-modal modal fade" id="researchModal6" tabindex="-1" aria-labelledby="researchModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Adapting a World Model for Trajectory Following in a 3D Game</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+									<h4 class="text-uppercase mb-4">World Models - Imitation Learning - Inverse Dynamics - Transformers</h4>
+                                    <!-- Portfolio Modal - Video-->
+									<div class="embed-responsive mb-5">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/s058ovnk7Bg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">
+									Imitation learning is a powerful tool for training agents by leveraging expert knowledge, and being able to replicate a given trajectory is an integral part of it. In complex environments, like modern 3D video games, distribution shift and stochasticity necessitate robust approaches beyond simple action replay.
+									</p>
+									<p class="mb-4">
+									In this study, we apply Inverse Dynamics Models (IDM) with different encoders and policy heads to trajectory following in a modern 3D video game — Bleeding Edge. We compare a ConvNeXt encoder trained from scratch against a frozen DINOv2 encoder with a trainable MLP adapter, combined with both MLP-style and GPT-style policy heads.
+									</p>
+									<p class="mb-4">
+									We investigate several future alignment strategies that address the distribution shift caused by aleatoric uncertainty and imperfections of the agent. Our results show that in a diverse data setting, a GPT-style policy head with an encoder trained from scratch performs best; a DINOv2 encoder with GPT-style policy head excels in the low-data regime; and both policy head styles achieve comparable results when pre-trained on diverse data and fine-tuned for a specific behaviour.
+									</p>
+									<p class="mb-4">
+									<a href="https://openreview.net/forum?id=KhWDZQenjd" target="_blank" rel="noopener noreferrer">Marko Tot, Shu Ishida, Abdelhak Lemkhenter, et al. Adapting a World Model for Trajectory Following in a 3D Game, ICLR 2025 Workshop on World Models (2025).</a>
 									</p>
                                 </div>
                             </div>
