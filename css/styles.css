@@ -11288,21 +11288,21 @@ html {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 .page-section .page-section-heading {
-  font-size: 2.25rem;
-  line-height: 2rem;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
 }
 @media (min-width: 992px) {
   .page-section .page-section-heading {
-    font-size: 3rem;
-    line-height: 2.5rem;
+    font-size: 2.25rem;
+    line-height: 2rem;
   }
 }
 
 .divider-custom {
-  margin: 1.25rem 0 1.5rem;
+  margin: 0.75rem 0 1rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -11428,31 +11428,31 @@ html {
 }
 
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+  padding-top: calc(4rem + 74px);
+  padding-bottom: 4rem;
 }
 .masthead .masthead-heading {
-  font-size: 2.75rem;
-  line-height: 2.75rem;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
 }
 .masthead .masthead-subheading {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 11rem;
 }
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    padding-top: calc(4rem + 104px);
+    padding-bottom: 4rem;
   }
   .masthead .masthead-heading {
-    font-size: 4rem;
-    line-height: 3.5rem;
+    font-size: 3rem;
+    line-height: 2.75rem;
   }
   .masthead .masthead-subheading {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 .portfolio .portfolio-item {
@@ -11460,6 +11460,8 @@ html {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.5rem;
   overflow: hidden;
   height: 100%;
@@ -11467,13 +11469,17 @@ html {
 }
 .portfolio .portfolio-item img {
   width: 100%;
-  height: 250px;
+  height: 180px;
   object-fit: contain;
+  object-position: center center;
   background-color: #fff;
+  margin-top: 2rem;
 }
 .portfolio .portfolio-item h4 {
   margin-top: auto;
   padding-top: 0.5rem;
+  margin-bottom: 0.5rem !important;
+  font-size: 0.85rem;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
@@ -11507,8 +11513,8 @@ html {
 }
 
 .footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #2c3e50;
   color: #fff;
 }
@@ -11519,4 +11525,25 @@ html {
 
 .sizer{
 	width: 300px;
+}
+
+.venue-badge {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  background-color: #2c3e50;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  z-index: 2;
+  line-height: 1.4;
+}
+.venue-badge.award-badge {
+  right: auto;
+  left: 0.4rem;
+  background-color: #c9a227;
 }
