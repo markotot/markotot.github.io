@@ -238,6 +238,16 @@
 							<h4 class="text-uppercase mb-4 text-center"> Monte Carlo Graph Search</h4>
                         </div>
                     </div>
+					<!-- Research Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#researchModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/research/wham/thumbnail.png" alt="..." />
+							<h4 class="text-uppercase mb-4 text-center"> World and Human Action Model</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -722,6 +732,51 @@
 									<br/><a href="http://www.diego-perez.net/papers/MCGS-AAAIWorkshop22.pdf" target="_blank" rel="noopener noreferrer"> Marko Tot, Michelangelo Conserva, Sam Devlin and Diego Perez-Liebana, Making Something Out of Nothing: Monte Carlo Graph Search in Sparse Reward Environments, in AAAI-22 Workshop on Reinforcement Learning in Games (2022). </a>
 									<br/>
 									<br/><a href="http://www.diego-perez.net/papers/TurningZeroesMCGS-CoG22.pdf" target="_blank" rel="noopener noreferrer"> Marko Tot, Michelangelo Conserva, Sam Devlin and Diego Perez-Liebana, Turning Zeroes into Non-Zeroes: Sample Efficient Exploration with Monte Carlo Graph Search, in Proceedings of the IEEE Conference on Games (CoG) (2022). </a>
+									</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<div class="portfolio-modal modal fade" id="researchModal5" tabindex="-1" aria-labelledby="researchModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">World and Human Action Model (WHAM)</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+									<h4 class="text-uppercase mb-4"> World Models - Generative AI - Gameplay Generation - Transformer - Microsoft Research </h4>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/research/wham/thumbnail.png" alt="WHAM" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">
+									WHAM is an autoregressive generative model trained to predict tokenized game visuals and controller actions given a prompt.
+									It consists of a VQ-GAN encoder-decoder for discretizing game visuals and a transformer backbone for next-token prediction, both trained from scratch.
+									The model supports three modes of operation: world modelling (generating visuals from controller actions), behaviour policy (predicting actions from visuals), and full generation (producing both visuals and actions simultaneously).
+									</p>
+									<p class="mb-4">
+									WHAM was trained on human gameplay data from Ninja Theory's Xbox game Bleeding Edge — a 3D, 4v4 multiplayer video game.
+									The training dataset comprises approximately 500,000 games from all seven game maps (over 1 billion observation-action pairs at 10Hz, equivalent to over 7 years of continuous human gameplay).
+									The resulting model generates consistent game sequences and shows evidence of capturing the 3D structure of the environment, the effects of controller actions, and the temporal structure of the game.
+									WHAM is developed by the Game Intelligence group at Microsoft Research, in collaboration with TaiX and Ninja Theory.
+									</p>
+									<p class="mb-4">
+									You can read the full publication and access the model here:
+									<br/><a href="https://www.nature.com/articles/s41586-025-08600-3" target="_blank" rel="noopener noreferrer">Anssi Kanervisto, Dave Bignell, Linda Yilin Wen, Martin Grayson, Raluca Georgescu, Sergio Valcarcel Macua, Shan Zheng Tan, Tabish Rashid, Tim Pearce, Yuhan Cao, Abdelhak Lemkhenter, Chentian Jiang, Gavin Costello, Gunshi Gupta, Marko Tot, Shu Ishida, Tarun Gupta, Udit Arora, Ryen W. White, Sam Devlin, Cecily Morrison, Katja Hofmann. World and Human Action Model (WHAM), Nature (2025).</a>
+									<br/>
+									<br/><a href="https://huggingface.co/microsoft/wham" target="_blank" rel="noopener noreferrer">Model and code on HuggingFace</a>
 									</p>
                                 </div>
                             </div>
