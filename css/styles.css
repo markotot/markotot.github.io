@@ -11456,10 +11456,21 @@ html {
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
   max-width: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  height: 100%;
+}
+.portfolio .portfolio-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.portfolio .portfolio-item h4 {
+  margin-top: auto;
+  padding-top: 0.5rem;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
